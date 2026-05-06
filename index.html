@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogSite — Share Your World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">✦ BlogSite</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#blogs">📰 Blogs</a></li>
+        <li><a href="#your-blog">✍️ Write</a></li>
+        <li><a href="#about">ℹ️ About</a></li>
+ 
+      </ul>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <span class="hero-badge">✦ Welcome to BlogSite</span>
+      <h1>Ideas Worth<br><span class="gradient-text">Sharing</span></h1>
+      <p>A vibrant community of writers, thinkers, and creators sharing knowledge with the world.</p>
+      <div class="hero-cta">
+        <a href="#blogs" class="btn-primary">📰 Explore Blogs</a>
+        <a href="#your-blog" class="btn-outline">✍️ Start Writing</a>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll</div>
+  </section>
+ 
+  <!-- BLOGS SECTION -->
+  <section id="blogs" class="section blogs-section">
+    <div class="section-header">
+      <span class="section-tag">✦ Latest Stories</span>
+      <h2>Explore Our <em>Blog Posts</em></h2>
+    </div>
+    <div class="cards-container" id="blog-cards"></div>
+  </section>
+ 
+  <!-- FULL BLOG VIEWER -->
+  <section id="blog-viewer" class="section blog-viewer hidden">
+    <button class="back-btn" id="back-btn">← Back to Blogs</button>
+    <article id="full-blog"></article>
+  </section>
+ 
+  <!-- SUBMIT BLOG -->
+  <section id="your-blog" class="section your-blog-section">
+    <div class="section-header">
+      <span class="section-tag">✦ Your Voice</span>
+      <h2>Submit <em>Your Story</em></h2>
+    </div>
+    <div class="form-wrapper">
+      <form id="blog-form" class="blog-form">
+        <input type="text" id="blog-title" placeholder="✏️  Blog Title" required />
+        <textarea id="blog-content" rows="8" placeholder="📝  Write your blog here..." required></textarea>
+        <button type="submit">🚀 Publish Blog</button>
+      </form>
+      <p id="form-message" class="form-message"></p>
+    </div>
+  </section>
+ 
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="team-header">
+      <span class="section-tag about-tag">✦ Meet the Team</span>
+      <h2>The People <em>Behind BlogSite</em></h2>
+    </div>
+    <div class="team-grid">
+ 
+      <!-- MENTOR CARD (featured) -->
+      <div class="team-card mentor-card">
+        <div class="team-card-glow"></div>
+        <div class="mentor-badge">⭐ Mentor</div>
+        <div class="team-photo-wrap">
+          <img src="fgh.jpg" alt="Mentor Photo" class="team-photo" />
+        </div>
+        <h3 class="team-name">Dr. Osho Sharma</h3>
+        <span class="team-role">Professor &amp; Guide</span>
+        <p class="team-desc">Dr. Osho Sharma is a renowned professor with extensive experience in computer science and software engineering. </p>.</p>
+        <div class="team-socials">
+          <span>🎓 Computer Science Dept.</span>
+        </div>
+      </div>
+ 
+
+ 
+      <!-- TEAMMATE 2 -->
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <img src="akam.jpeg" />
+        </div>
+        <h3 class="team-name">Sattyam Sharma</h3>
+        <span class="team-role">Team Member</span>
+        <p class="team-desc">Sattyam is a first-year Computer Science Engineering (CSE) student with a strong passion for coding and technology. As beginner heis constantly learning, exploring new technologies and contributing to the project.</p>
+        <div class="team-socials">
+          <span>💻 1st Year B.E CSE</span>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 <span class="accent">BlogSite</span>. Crafted with <span class="accent">♥️</span> for curious minds.</p>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
